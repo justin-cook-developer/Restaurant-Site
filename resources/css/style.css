@@ -10,5 +10,32 @@ html {
   font-family: 'Lato', 'Arial', 'sans-serif';
   font-weight: 300;
   font-size: 20px;
+  /* optimizing for icons */
   text-rendering: optimizeLegibility;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+header {
+  /* applying a color overlay to the background image */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  /* use transform over changing top and left because it is more precise and consistent */
+  transform: translate(-50%, -50%);
+}
+
+header h1 {
+  margin: 0;
 }
